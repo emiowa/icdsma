@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #333;
+}
+
+div.container-fluid{
+    margin: 0;
+    padding: 0;
+}
+
+div#overflowHidden{overflow-x: hidden;}
+
+label, header .navbar ul, button, a.linkLogo{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* TEXT STYLE */
+h1{font-size: 4vw;}
+h2{font-size: 2.5vw;}
+li{font-size: 1.2vw;}
+p{font-size: 1.2vw;}
+a{
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+
+/* NAVBAR STYLE */
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5vw;
+    background-color: #f5f5fa;
+    box-shadow: 0px 5px 6px -1px rgba(60,60,60,0.1);
+    padding: 0 0.5vw 0 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-right: 3vw;
+}
+
+header .navbar ul li a{
+    font-size: 1.3vw;
+    width: 9vw;
+    text-align: center;
+    color: #4a55a5;
+    display: block;
+    text-decoration: none;
+    margin: 0vw 1vw;
+}
+
+header .navbar ul li a:hover{font-weight: 700;}
+header .navbar ul li:hover > ul{display: initial;}
+#menu-bar{display: none;}
+
+header label{
+    font-size: 7vw;
+    padding-right: 3vw;
+    color: #4a55a5;
+    cursor: pointer;
+    display: none;
+}
+
+img.logoNavbar{
+    height: 3.5vw;
+    width: auto;
+    padding-left: 2.5vw;
+}
+
+a#inquiryButton{
+    border: solid 1px #4a55a5;
+    background-color: #4a55a5;
+    border-radius: 30px;
+    padding: 0.5vw 0.5vw;
+    color: #f5f5fa;
+    box-shadow: 0px 5px 12px -1px rgba(60,60,60,0.2);
+    transition: all 0.2s;
+}
+
+a#inquiryButton:hover{
+    border: solid 1px #4a55a5;
+    background-color: transparent;
+    color: #4a55a5;
+}
+
+
+/* INQUIRY */
+div#inquirySection{
+    padding-bottom: 50px;
+}
+div#textInquirySection{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 0;
+}
+
+h1#inquirySectionTitle{
+    font-size: 3vw;
+    padding: 0 50px;
+}
+p#inquirySectionPa{font-size: 1.5vw;}
+p.informationSectionTitle{
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+div#finalInformation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p#finalInformationText{font-size: 1.3vw;}
+
+button#pdfLink{
+    border: solid 1px #4a55a5;
+    background-color: #4a55a5;
+    border-radius: 30px;
+    padding: 1vw 2vw;
+    color: #f5f5fa;
+    font-size: 1.3vw;
+    font-weight: bold;
+    box-shadow: 0px 5px 12px -1px rgba(60,60,60,0.2);
+    margin-left: 10vw;
+    transition: all 0.2s;
+}
+button#pdfLink:hover{
+    border: solid 1px #4a55a5;
+    background-color: transparent;
+    color: #4a55a5;
+}
+
+div.backgroundInformationSection{
+    position: relative;
+    background-color: #f5f5fa;
+    padding: 5vw 2vw 2vw 2vw;
+    border-radius: 10px;
+    box-shadow: 10px 10px 21px -5px rgba(60,60,60,0.1);
+    margin: 6vw 20vw;
+}
+
+.backgroundInformationSection::before{
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #4a55a5;
+    box-shadow: 10px 10px 21px -5px rgba(60,60,60,0.1);
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #f5f5fa;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#policy1::before{content: "\f2c2";}
+#policy2::before{content: "\f3ed";}
+#policy3::before{content: "\f502";}
+#policy4::before{content: "\f0e0";}
+#policy5::before{content: "\f51c";}
+
+div.floatRight{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* FORM */
+h1#contactSectionTitle{
+    text-align: center;
+    font-size: 3vw;
+}
+
+div#form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+iframe{
+    width: 680px;
+    height: 1010px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #333;
+    text-align: center;
+    padding: 1.5vw 0 1vw 0;
+    margin-top: 2vw;
+}
+
+h2#footerSectionTitle{font-size: 2.2vw;}
+p#footerSectionSubtitle{font-size: 1vw;}
+small{font-size: 0.8vw;}
+a{color: #f5f5fa;}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 992px){
+    body{
+        width: 100vw;
+        overflow-x: hidden !important;
+    }
+
+    /* TEXT STYLE */
+    h1{
+        font-size: 8vw;
+        text-align: center;
+    }
+    h2{font-size: 7vw;}
+    p{font-size: 3.5vw;}
+    li{font-size: 3.5vw;}
+
+
+    /* NAVBAR */
+    header{
+        padding: 5vw;
+        height: 15vw;
+    }
+    header label{
+        display: initial;
+        padding-right: 0;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #4a55a5;
+        border-top: 1px solid rgba(0,0,0,.1);
+        display: none;
+    }
+    header .navbar ul li{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+    }
+    header .navbar ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    header .navbar ul li a#homeButton,
+    header .navbar ul li a#aboutButton,
+    header .navbar ul li a#contactButton{
+        width: 40vw;
+        padding: 2.5vh 0;
+        text-align: center;
+        font-size: 5vw;
+        color: #f5f5fa;
+    }
+    header .navbar ul li:focus-within > ul{display: initial;}
+    #menu-bar:checked ~ .navbar{display: initial;}
+    img.logoNavbar{
+        height: 10vw;
+        padding-left: 0vw;
+    }
+    a#inquiryButton{
+        color: #4a55a5;
+        width: 50vw;
+        padding: 1.5vh 0;
+        text-align: center;
+        font-size: 5vw;
+        background-color: #f5f5fa;
+    }
+    a#inquiryButton:hover{
+        border: solid 1px #f5f5fa;
+        background-color: #f5f5fa;
+        color: #4a55a5;
+    }
+
+
+    /* INQUIRY */
+    div#textInquirySection{
+        margin-top: 4vw;
+    }
+    h1#inquirySectionTitle{font-size: 8vw;}
+    p#inquirySectionPa{font-size: 3.8vw;}
+    p.informationSectionTitle{font-size: 3.8vw;}
+    p#finalInformationText{font-size: 3.5vw;}
+    div#finalInformation{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10vw;
+    }
+    button#pdfLink{
+        padding: 1vw 5vw;
+        font-size: 3.8vw;
+        margin-left: 0;
+    }
+
+    div.backgroundInformationSection{
+        padding: 15vw 3vw 2vw 3vw;
+        margin: 10vw 3vw;
+    }
+
+    .backgroundInformationSection::before{
+        top: -20px;
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        font-size: 30px;
+    }
+
+    div.floatRight{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+
+
+    /* FORM */
+    h1#contactSectionTitle{
+        margin: 4vw 0 2vw 0;
+        font-size: 8vw;
+    }
+
+    iframe{
+        width: 100vw;
+        height: 320vw;
+    }
+
+
+    /* FOOTER */
+    h2#footerSectionTitle{font-size: 6vw;}
+    p#footerSectionSubtitle{font-size: 2.8vw;}
+    small{font-size: 2vw;}
+    a{color: #f5f5fa;}
+}
+
+@media screen and (min-width: 1400px){
+    p{font-size: 1vw;}
+    h2{font-size: 3vw;}
+
+    /* NAVBAR STYLE */
+    header{
+        height: 3.6vw;
+        padding: 0 13vw;
+    }
+    header .navbar ul li a{
+        font-size: 1.1vw;
+        width: 7.8vw;
+    }
+    img.logoNavbar{height: 2.6vw;}
+    a#inquiryButton{padding: 0.3vw 0.5vw;}
+
+
+    /* INQUIRY */
+    p.informationSectionTitle{font-size: 1vw;}
+    div.backgroundInformationSection{margin: 4vw 25vw;}
+    .backgroundInformationSection::before{top: -30px;}
+
+
+    /* FOOTER */
+    h2#footerSectionTitle{font-size: 2vw;}
+    p#footerSectionSubtitle{font-size: 0.8vw;}
+    small{font-size: 0.6vw;}
+}
