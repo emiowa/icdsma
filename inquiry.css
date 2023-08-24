@@ -312,7 +312,8 @@ a{color: #f5f5fa;}
 
     /* INQUIRY */
     div#textInquirySection{
-        margin-top: 4vw;
+        padding-top: 10vw;
+        margin-top: 0;
     }
     h1#inquirySectionTitle{font-size: 8vw;}
     p#inquirySectionPa{font-size: 3.8vw;}

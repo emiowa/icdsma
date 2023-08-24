@@ -334,7 +334,10 @@ a{color: #f5f5fa;}
         margin: 0;
         margin-bottom: 0;
     }
-    img#imageLogoAboutSection{height: 250px;}
+    img#imageLogoAboutSection{
+        height: 250px;
+        margin-right: 0;
+    }
 
 
     /* BUTTONS */
