@@ -157,7 +157,10 @@ div#imageIntroductionSection{
     margin-bottom: 3%;
 }
 
-img#imageLogoAboutSection{height: 550px;}
+img#imageLogoAboutSection{
+    height: 550px;
+    margin-right: 80px;
+}
 
 
 /* SERVICES SECTION */
@@ -270,6 +273,7 @@ a{color: #f5f5fa;}
         top: 100%;
         left: 0;
         right: 0;
+        padding-bottom: 50px;
         background-color: #4a55a5;
         border-top: 1px solid rgba(0,0,0,.1);
         display: none;
@@ -325,6 +329,10 @@ a{color: #f5f5fa;}
     p#aboutSectionPa{
         font-size: 3.5vw;
         text-align: center;
+    }
+    div#imageIntroductionSection{
+        margin: 0;
+        margin-bottom: 0;
     }
     img#imageLogoAboutSection{height: 250px;}
 

@@ -235,6 +235,7 @@ a{color: #f5f5fa;}
         top: 100%;
         left: 0;
         right: 0;
+        padding-bottom: 50px;
         background-color: #4a55a5;
         border-top: 1px solid rgba(0,0,0,.1);
         display: none;

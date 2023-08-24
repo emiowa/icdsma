@@ -260,6 +260,7 @@ a{color: #f5f5fa;}
         top: 100%;
         left: 0;
         right: 0;
+        padding-bottom: 50px;
         background-color: #4a55a5;
         border-top: 1px solid rgba(0,0,0,.1);
         display: none;
@@ -326,6 +327,11 @@ a{color: #f5f5fa;}
         padding: 1vw 5vw;
         font-size: 3.8vw;
         margin-left: 0;
+    }
+
+    div.backgroundFinalInformation{
+        padding: 5vw 3vw 5vw 3vw;
+        margin: 10vw 3vw;
     }
 
     div.backgroundInformationSection{
