@@ -371,7 +371,7 @@ a{color: #f5f5fa;}
 }
 
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1500px){
     p{font-size: 1vw;}
     h2{font-size: 3vw;}
     li{font-size: 1vw;}

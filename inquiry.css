@@ -107,9 +107,6 @@ a#inquiryButton:hover{
 
 
 /* INQUIRY */
-div#inquirySection{
-    padding-bottom: 50px;
-}
 div#textInquirySection{
     text-align: center;
     margin-top: 3vw;
@@ -121,8 +118,7 @@ h1#inquirySectionTitle{
     padding: 0 50px;
 }
 p#inquirySectionPa{font-size: 1.5vw;}
-p.informationSectionTitle{
-    font-size: 1.5vw;
+h4{
     text-align: center;
 }
 
@@ -131,7 +127,6 @@ div#finalInformation{
     justify-content: center;
     align-items: center;
 }
-p#finalInformationText{font-size: 1.3vw;}
 
 button#pdfLink{
     border: solid 1px #4a55a5;
@@ -139,7 +134,7 @@ button#pdfLink{
     border-radius: 30px;
     padding: 1vw 2vw;
     color: #f5f5fa;
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: bold;
     box-shadow: 0px 5px 12px -1px rgba(60,60,60,0.2);
     margin-left: 10vw;
@@ -149,6 +144,16 @@ button#pdfLink:hover{
     border: solid 1px #4a55a5;
     background-color: transparent;
     color: #4a55a5;
+}
+
+div.backgroundFinalInformation{
+    position: relative;
+    background-color: #f5f5fa;
+    padding: 2vw;
+    border-radius: 10px;
+    border: #4a55a5 solid 1px;
+    box-shadow: 10px 10px 21px -5px rgba(60,60,60,0.1);
+    margin: 3vw 20vw;
 }
 
 div.backgroundInformationSection{
@@ -189,6 +194,8 @@ div.floatRight{
     margin-left: auto;
     margin-right: 0;
 }
+
+p.informationSectionTitle{font-size: 1.3vw;}
 
 /* FORM */
 h1#contactSectionTitle{
@@ -308,7 +315,7 @@ a{color: #f5f5fa;}
     }
     h1#inquirySectionTitle{font-size: 8vw;}
     p#inquirySectionPa{font-size: 3.8vw;}
-    p.informationSectionTitle{font-size: 3.8vw;}
+    h4{font-size: 3.8vw;}
     p#finalInformationText{font-size: 3.5vw;}
     div#finalInformation{
         flex-direction: column;
@@ -360,7 +367,7 @@ a{color: #f5f5fa;}
     a{color: #f5f5fa;}
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1500px){
     p{font-size: 1vw;}
     h2{font-size: 3vw;}
 
@@ -378,7 +385,7 @@ a{color: #f5f5fa;}
 
 
     /* INQUIRY */
-    p.informationSectionTitle{font-size: 1vw;}
+    h4{font-size: 1.3vw;}
     div.backgroundInformationSection{margin: 4vw 25vw;}
     .backgroundInformationSection::before{top: -30px;}
 
